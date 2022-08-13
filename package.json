@@ -1,0 +1,11 @@
+{
+  "name": "atleastiamtryin",
+  "version": "1.0.0",
+  "description": "hi i love u",
+  "scripts": {
+    "front": "cd frontend; npm start",
+    "back": "json-server --watch db.json --port 8080"
+  },
+  "author": "eelfy",
+  "license": "ISC"
+}
