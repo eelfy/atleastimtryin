@@ -4,8 +4,12 @@
   "description": "hi i love u",
   "scripts": {
     "front": "cd frontend; npm start",
-    "back": "json-server --watch db.json --port 8080"
+    "back": "json-server db.json -m ./node_modules/json-server-auth --port 8080"
   },
   "author": "eelfy",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0",
+    "json-server-auth": "^2.1.0"
+  }
 }
