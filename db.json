@@ -1,4 +1,35 @@
 {
-  "users": [],
-  "contacts": []
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$IAnUkbg7ly1ugVlDX8gI5e67pKBX.qCcOKdQIqXoHj/oVuEVV.XcC",
+      "id": 1
+    }
+  ],
+  "contacts": [
+    {
+      "userId": 1,
+      "name": "ZywOo",
+      "description": "Vitality",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "name": "s1mple",
+      "description": "Natus Vincere",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "name": "sh1ro",
+      "description": "Cloud9",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "name": "Kaze",
+      "description": "Rare Atom",
+      "id": 24
+    }
+  ]
 }

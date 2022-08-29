@@ -31,6 +31,7 @@
         ],
         "no-debugger": "warn",
         "react/react-in-jsx-scope": "off", // in react v17+ we can not import react in jsx files
-        "react/function-component-definition": [2, { "namedComponents": "arrow-function" }] // i am prefer to use only arrow function for components
+        "react/function-component-definition": [2, { "namedComponents": "arrow-function" }], // i am prefer to use only arrow function for components
+        "import/prefer-default-export": "off"
     }
 }
