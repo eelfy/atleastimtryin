@@ -22,3 +22,7 @@ and for `json-server-auth` as JWT authentication middleware https://github.com/j
 ```sh
 npm run back
 ```
+#### auth
+
+log: admin@mail.com
+pass: admin
