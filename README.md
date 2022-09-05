@@ -1,3 +1,7 @@
+# contact(or smth else) list with auth. 
+
+## used technologies: react(cra), ts, mobx, styled-componetns, react-router, json-server
+
 ## node version
 ✨v16.14.0✨
 
