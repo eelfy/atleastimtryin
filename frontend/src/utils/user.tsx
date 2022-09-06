@@ -21,5 +21,10 @@ const setUser = (newUser: User) => {
   localStorage.setItem(LocalStorageKeys.Token, newUser.accessToken);
 };
 
-export { getUser, setUser };
+const removeUser = () => {
+  localStorage.removeItem(LocalStorageKeys.User);
+  localStorage.removeItem(LocalStorageKeys.Token);
+};
+
+export { getUser, setUser, removeUser };
 export type { User };

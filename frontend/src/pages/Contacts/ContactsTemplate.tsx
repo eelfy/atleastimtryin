@@ -1,4 +1,5 @@
 import { Input } from 'antd';
+import PageContainerWithNavMenu from 'components/PageContainerWithNavMenu';
 import { observer } from 'mobx-react-lite';
 import { FC } from 'react';
 import { useStore } from 'store/RootStore';
@@ -23,22 +24,23 @@ const ContactsTemplate: FC<ContactsTemplateProps> = observer(({
   } = useStore();
 
   return (
-    <ContactsWrapper>
-      <ContactsBody>
-        <Input
-          value={searchValue}
-          onChange={changeContactsSearchValue}
-          type="search"
-          style={{ width: '300px' }}
-          placeholder="Search via contact name"
-        />
-        <CardsCounter>
-          all contacts count:
-          {' '}
-          <span>{contactsCount}</span>
-        </CardsCounter>
-        <Cards>
-          {
+    <PageContainerWithNavMenu>
+      <ContactsWrapper>
+        <ContactsBody>
+          <Input
+            value={searchValue}
+            onChange={changeContactsSearchValue}
+            type="search"
+            style={{ width: '300px' }}
+            placeholder="Search via contact name"
+          />
+          <CardsCounter>
+            all contacts count:
+            {' '}
+            <span>{contactsCount}</span>
+          </CardsCounter>
+          <Cards>
+            {
             contacts
               .filter(
                 (contact) => caseInsensitiveSearch(searchValue.trim(), contact.name),
@@ -53,10 +55,11 @@ const ContactsTemplate: FC<ContactsTemplateProps> = observer(({
                 ),
               )
           }
-          {!isContactsLoading && <NewContactCard />}
-        </Cards>
-      </ContactsBody>
-    </ContactsWrapper>
+            {!isContactsLoading && <NewContactCard />}
+          </Cards>
+        </ContactsBody>
+      </ContactsWrapper>
+    </PageContainerWithNavMenu>
   );
 });
 
